@@ -1,5 +1,6 @@
-Client-Side Technologies Lab 3
+Client-Side Technologies 
 (JavaScript Fundamentals)
+
 1. Ask the user to enter a message then display it using the different html heading tags (from <h1> to <h6>) using Loops. DO NOT write the header element explicitly in your script!
 
 2. Write a script that takes from the user n values and returns their sum.
