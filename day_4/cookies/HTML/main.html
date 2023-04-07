@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <label for="userName">Enter Your Name</label>
+    <input type="text" id="userName" name="userName" onchange="assignVal(this.value)">
+    <br><br>
+    <label for="userAge">Enter Your Age</label>
+    <input type="number" id="userAge" name="userAge" onchange="assignVal1(this.value)">
+    <br><br>
+    <label for="user_gender">Select Your Gender</label>
+    <br><br>
+    <label>
+        <input type="radio" id="user_gender" name="user_gender">
+        <img src="../images/1.jpg" alt="male">
+    </label>
+    <label>
+        <input type="radio" id="user_gender" name="user_gender">
+        <img src="../images/2.jpg" alt="female">
+    </label>
+    <br><br>
+    <label for="userName">Enter Your Name</label>
+    <select  id="mmm">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <br><br>
+    <button style="margin-left: 250px;">Regist</button>
+    <script src="../javascript/lib.js"></script>
+    <script src="../javascript/cookieScript.js"></script>
+</body>
+
+</html>

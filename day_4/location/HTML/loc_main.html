@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Location Task</title>
+    <style>
+        span {
+            color: red;
+            opacity:50%;
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="..//HTML/display.html" onsubmit="validateForm ()">
+        <label for="user_name">Enter your name</label>
+        <input type="text" placeholder="Name" id="user_name" name="user_name" oninvalid="alert('You must fill out your name');" required>
+        <span></span>
+        <br><br>
+        <label for="user_add">Enter your address</label>
+        <input type="text" placeholder="Address" id="user_add" name="user_add" oninvalid="alert('You must fill out your address');" required>
+        <span></span>
+        <br>
+        <p>Choose your gender</p>
+        <input type="radio" id="male" name="user_gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio"  id="female" name="user_gender" value="Female">
+        <label for="female">Female</label><br><br>
+        <label for="user_num">Enter your mobile number</label>
+        <input type="number" placeholder="Mobile number" id="user_num" name="user_num" oninvalid="alert('You must fill out your mobile');" required>
+        <span></span>
+        <br><br>
+        <label for="interests">Enter your interests</label> <br><br>
+        <textarea style="resize:none" name="interests" id="interests" cols="30" rows="5" placeholder="Interests" oninvalid="alert('You must fill out your interests');" required></textarea>
+        <span></span>
+        <br><br>
+        <input type="submit" id="submit">
+    </form>
+
+    <script src="../javascript/loc_script.js"></script>
+</body>
+
+</html>
