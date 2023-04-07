@@ -1,4 +1,3 @@
-## Client-Side Technologies 
 ### (JavaScript Fundamentals)
 
 1. Ask the user to enter a message then display it using the different html heading tags (from h1 to h6) using Loops.
@@ -8,6 +7,7 @@
     Note: stop receiving values from user when he enters 0.
 
 #### 3. String Object
+
 3.1 Write a script to determine whether the entered string is palindrome or not. 
     Ask the user whether to consider case of the entered string or not, handle both cases in your script
 i.e. RADAR NOON MOOM are palindrome. Note: raDaR is not a palindrome if user requested considering case of entered string.
