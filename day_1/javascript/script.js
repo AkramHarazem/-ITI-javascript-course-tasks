@@ -65,7 +65,7 @@ function palind() {
 // task 3.2 user info
 function userInfo() {
     // name choose and validation
-    var nameRegex = /^[a-zA-z ][^\d]{2,30}$/
+    var nameRegex = /^[a-zA-z\s][^\d]{2,30}$/
     var name = prompt("Please enter a valid name (2 to 30 char):")
     if (name == null) {
         alert("thanks, if you want enter your info again press info button")
@@ -95,7 +95,7 @@ function userInfo() {
                 }
 
                 // email choose and validation
-                var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{3}$/
+                var emailRegex = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{3}$/
                 var email = prompt("Please enter a valid email:")
                 if (email == null) {
                     alert("thanks, if you want enter your info again press info button")
@@ -156,7 +156,7 @@ function countE() {
         var newStr = str.toLowerCase() // lowercase string letters
         var count = 0
         for (var i = 0; i < newStr.length; i++) {
-            if (newStr[i] === 'e') {
+            if (newStr[i] === "e") {
                 count++
             }
         }

@@ -1,5 +1,6 @@
 var cookieName1 = 'user_name'
 var cookieValue1
+
 function assignVal(val) {
     cookieValue1 = val
 }
@@ -7,26 +8,33 @@ function assignVal(val) {
 
 var cookieName2 = 'user_age'
 var cookieValue2
+
 function assignVal1(val) {
     cookieValue2 = val
 }
 
 
 var cookieName3 = 'user_gender'
-var cookieValue3  
+var cookieValue3
 var radioInp = document.getElementsByName('user_gender')
-for (var i=0;i<radioInp.length;i++) {
+for (var i = 0; i < radioInp.length; i++) {
     radioInp[i].onclick = imgSelect
 }
-function imgSelect(){
-var selectedImg = this.parentNode.querySelector('img').src
-cookieValue3 = selectedImg
+
+function imgSelect() {
+    var selectedImg = this.parentNode.querySelector('img').src
+    cookieValue3 = selectedImg
 }
 
 
 var cookieName4 = "user_color"
-var sel = document.getElementsByTagName('select')[0]
-var cookieValue4 =sel.value
+var cookieValue4
+
+function colorsel() {
+    var selList = document.getElementsByTagName('select')[0]
+    var selIdx = selList.selectedIndex
+    cookieValue4 = selList.options[selIdx].value
+}
 
 var counter = 0
 

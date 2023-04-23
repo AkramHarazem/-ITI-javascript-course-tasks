@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Main</title>
 </head>
 <style>
-#box {
-  width: 400px;
-  height: 400px;
-  padding: 0;
-  border: 3px solid red;
-  margin: 0;
-}
+    #box {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        padding: 0;
+        border: 3px solid red;
+        margin: 0;
+    }
 
-img {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-}
+    #leftimg {
+        position: absolute;
+        top: 50%;
+    }
 
-#leftimg {
-    top: 200px;
-}
-#rightimg {
-    top: 200px;
-    left: 361px;
-}
+    #rightimg {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
 
-#topimg {
-    top: 380px;
-    left: 200px;
-}
+    #topimg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
 
-button {
-padding: 15px 32px;
-  text-align: center;
-  width: 100px;
-  font-size: 16px;
-  margin: 4px 2px;
+    button {
+        padding: 15px 32px;
+        text-align: center;
+        width: 100px;
+        font-size: 16px;
+        margin: 4px 2px;
 
-}
+    }
 </style>
+
 <body>
     <div id="box">
         <img src="../images/icon1.gif" alt="leftimg" id="leftimg">
@@ -47,12 +48,13 @@ padding: 15px 32px;
         <img src="../images/TOP.JPG" alt="topimg" id="topimg">
     </div>
     <br><br>
-<button id="go_stop" onclick="move()">Go</button>
-<button id="reset" onclick="reset()">Reset</button>
-<br><br>
-<p id="top"></p>
-<p id="left"></p>
-<p id="right"></p>
+    <button id="go_stop">Go</button>
+    <button id="reset">Reset</button>
+    <br><br>
+    <p id="top"></p>
+    <p id="left"></p>
+    <p id="right"></p>
     <script src="../javascript/script.js"></script>
 </body>
+
 </html>

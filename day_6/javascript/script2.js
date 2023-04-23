@@ -4,6 +4,7 @@ var Artist_list = document.getElementById('Artist_list')
 var xhr = new XMLHttpRequest()
 
 xhr.open('GET', '../JSON/rockbands.json')
+xhr.send() 
 
  xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
@@ -34,10 +35,7 @@ xhr.open('GET', '../JSON/rockbands.json')
             throw ('ERROR')
         }
     }
-console.log(data);
 }
-xhr.send() 
-// console.log(data);
 
 Artist_list.addEventListener('change', function () {
     var selected_artist = this.options[this.selectedIndex]

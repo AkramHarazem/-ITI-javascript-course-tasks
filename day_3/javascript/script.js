@@ -77,35 +77,3 @@ buttonArr[1].onclick = slideShow
 buttonArr[2].onclick = stopSlide
 buttonArr[3].onclick = prevNext
 
-
-
-// var timerID = setInterval (function(){
-
-//     document.querySelector('img').style.left = (parseInt(getComputedStyle(document.images[0].left))-10 ) + "px" 
-
-//     if (parseInt(document.querySelector('img').style.left)= 0 + "px"){
-//         clearInterval(timerID)
-//         }
-// },100)
-
-// function EnterEqual (){
-//     answerInp.value = answerInp.value.substring(0,answerInp.value.length-1)
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-for(var i =(parseInt(getComputedStyle(document.images[0].left)));i=0;i-10 ){
-    document.querySelector('img').style.left = ((i-10 ) + "px")
-}
-

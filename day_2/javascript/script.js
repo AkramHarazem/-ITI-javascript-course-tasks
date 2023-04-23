@@ -25,13 +25,14 @@ function calcArr() {
     document.write(`<h3 style="color:red;">Multiplication of 3 values: <span style="color:black;">${arr.join("*")} = ${multi}</span> </h3>`)
 
     var divid = arr[0]
-    if (arr[0] === 0) {
-        for (var i = 1; i < arrLength; i++) {
-            divid = divid / arr[i]
-        }
-        document.write(`<h3 style="color:red;">Division of 3 values: <span style="color:black;">${arr.join("/")} = ${divid}</span> </h3>`)
+    // if (arr[0] === 0) {
+    //     for (var i = 1; i < arrLength; i++) {
+    //         divid = divid / arr[i]
+    //     }
+    //     document.write(`<h3 style="color:red;">Division of 3 values: <span style="color:black;">${arr.join("/")} = ${divid}</span> </h3>`)
 
-    } else if (arr.includes(0, 1)) {
+    // } 
+     if (arr.includes(0, 1)) {
         document.write(`<h3 style="color:red;">Division of 3 values: <span style="color:black;"> is infinity </span> </h3>`)
 
     } else {
@@ -70,7 +71,7 @@ function mathOpr() {
         var num = prompt(`What is the value you want to calculate its square root`)
     } while (isNaN(num) || num === null || num === "" || num < 0)
 
-    alert(`Square root of ${num} is ${(Math.sqrt(num)).toFixed(5)}`)
+    alert(`Square root of ${num} is ${(Math.sqrt(parseFloat(num))).toFixed(5)}`)
 
     do {
         var angle = prompt(`What is the angle you want to calculate its cos value`)
@@ -85,7 +86,7 @@ var childWin
 var timerID
 
 function openWin() {
-    childWin = open('', 'childWindow', 'width=200,height=200')
+    childWin = open('', '', 'width=200,height=200')
 }
 
 function moveWin() {
@@ -124,7 +125,7 @@ function winScroll() {
     Childwind.document.write(`<p style ="font-size: 300px" class="a">This is some text.</p>`)
 
     var scrollerID = setInterval(function () {
-        if (Childwind.document.body.scrollHeight <= Childwind.document.body.scrollTop + Childwind.innerHeight) {
+        if (Childwind.document.body.scrollHeight == Childwind.document.body.scrollTop + Childwind.innerHeight) {
             clearInterval(scrollerID)
         } else {
             Childwind.scrollBy(0, 15)

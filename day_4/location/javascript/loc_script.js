@@ -7,12 +7,10 @@ function validateName() {
     if (!nameRegex.test(name)) {
         this.nextElementSibling.innerText = 'Name is invalid please use letters only and not exceed 30 letters';
         // alert("Name is invalid please use letters only and not exceed 30 letters");
-        console.log(this);
-        // this.focus()
-        return false
+        // console.log(this);
+        this.focus()
     } else {
         this.nextElementSibling.innerText = '';
-        return true
     }
 
 }
@@ -28,10 +26,8 @@ function validateAdd() {
         // alert("Address is invalid");
         this.nextElementSibling.innerText = 'Address is invalid please use letters, numbers, spaces, comma and slach';
         this.focus()
-        return false
     } else {
         this.nextElementSibling.innerText = '';
-        return true
     }
 
 }
@@ -45,10 +41,8 @@ function validateNum() {
         this.nextElementSibling.innerText = 'Mobile number is invalid, please valid number starts with 010,011,012';
         // alert("Mobile number is invalid");
         this.focus()
-        return false
     } else {
         this.nextElementSibling.innerText = '';
-        return true
     }
 
 }
@@ -62,23 +56,17 @@ function validateInt() {
         this.nextElementSibling.innerText = 'Text is invalid please use letters, numbers, spaces, comma and slach';
         // alert("Interests are invalid");
         this.focus()
-        return false
     } else {
         this.nextElementSibling.innerText = '';
-        return true
     }
 
 }
 
-function validateForm() {
-    if (!confirm('Are you sure?')) {
-        return false
-    } else {
-        validateName()
-        validateAdd()
-        validateNum()
-        validateInt()
+document.getElementsByTagName('form')[0].onsubmit= validateForm
 
-        return validateName() && validateAdd() && validateNum() && validateInt()
-    }
+function validateForm(event) {
+    if (!confirm('Are you sure?')) {
+        // return false
+        event.preventDefault()
+    } 
 }
